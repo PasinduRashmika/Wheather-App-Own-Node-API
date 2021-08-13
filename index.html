@@ -23,22 +23,20 @@
       <div class="wheather-display">
         <div class="side search">
           <div class="search-form">
-            <form action="post" class="search">
-              <span><i class="fas fa-map-marker-alt"></i> </span>
-              <input
-                type="text"
-                class="input-city"
-                placeholder="Search Location"
-              />
+            <form action="/"  method="POST" class="search">
+              <input type="text" class="input-city" name="cityName" placeholder="Search Location"/>
+              <br>
+              <button type="submit" class="btn">Search <i class="fas fa-search"></i></button>
             </form>
           </div>
         </div>
         <div class="side result">
           <div class="result-form">
-            <form action="post" class="search">
-              <label for="">Location :</label>
-              <input type="text" class="input-city" />
-            </form>
+                <h1 id="#">City</h1>
+                <p id="temp">temp</p>
+                <p>descrip</p>
+                <p>pressure</p>
+                <p>humidity</p>
           </div>
         </div>
       </div>
