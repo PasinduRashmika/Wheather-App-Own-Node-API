@@ -21,7 +21,7 @@ app.get('/', function(req, res){
 app.post("/",function(req,res){
     const city=req.body.cityName;
     //const city='matugama';
-    const API='99e75fc860bfca409438c4f8ce3cb080';
+    const API=APIKEY;
     const url='http://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&appid='+API;
 
 
